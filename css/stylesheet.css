@@ -2,12 +2,6 @@
 
 
 
-/*.nav-fill{
-   display:flex;
-   justify-content:space-around;
-}
-*/
-
 
 
 .jumbotron{
@@ -15,23 +9,55 @@
 }
 
 
-
-/*.container{
+.container{
    display:flex;
    }
    
+/*.img-fluid .images {
+   background-color: blue;
+}
 */
 
-
-h1 h4 div>p {
+/*h1 h4 div>p {
    
 display: flex;
 text-align: center;
 font-family: 'Roboto', sans-serif;
+*/
 
    
+
+
+#attraction{
+   display: flex;
+   text-align:center;
+   font-family: 'Roboto', sans-serif;
+     }
+     
+#info{
+   font-family: 'Roboto', sans-serif;
+}
+
+p~ul  {
+   list-style: none;
+   font-size: 25px;
+   font-family: 'Roboto', sans-serif;
+}
+
+div p{
+   font-size: 25px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/*img{
+   max-width: 100%
+   max-height:100%;
+   transition:0.75s;
 }
 
 img:hover{
-   
+   transition: scale (1.2);
 }
+*/
+
+   
