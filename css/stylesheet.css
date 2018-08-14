@@ -5,7 +5,7 @@
 
 
 .jumbotron{
-   background-color: #B09C63;
+   background-color: #B09C63; 
 }
 
 
@@ -13,10 +13,8 @@
    display:flex;
    }
    
-/*.img-fluid .images {
-   background-color: blue;
-}
-*/
+
+
 
 /*h1 h4 div>p {
    
