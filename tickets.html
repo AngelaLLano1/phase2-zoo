@@ -37,7 +37,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">GET CODE</button>
+        <button type="button" class="btn btn-primary"><a href="tickets.html">GET CODE</a></button>
       </div>
     </div>
   </div>
@@ -82,7 +82,7 @@
  <section>
    <div class="jumbotron jumbotron-fluid">
   <div class="container-fluid">
-    <h1>Tickets</h1>
+    <h1 >Tickets</h1>
     <p>Purchase online tickets below and get 10% discounts</p>
   </div>
   </div>
@@ -92,12 +92,12 @@
       
      
 
-<section>
+<section id="tickets">
   <div class="container-fluid">
   <div class="row">
     <div class="col">
       <table class= "table table-hover">
-  <caption>List of users</caption>
+  
   <thead>
     <tr>
       <th scope="col">Tickets</th>
@@ -107,11 +107,11 @@
   </thead>
   <tbody>
     <tr>
-      <td id="Adult">Adult<br> 13 & over</td>
-      <td>$36.95</td>
-      <td>
-      <!used emmet code for select list [option value="0$"]*10 -->
-        <select id="adultQuantity">
+      <td id="adult">Adult<br> 13 & over</td>
+      <td id="adultPrice">$36.95</td>
+      
+      <td><!--used emmet code for select list [option value="0$"]*10 -->
+    <select id="adultQuantity">
      <option value="0">0</option>  
      <option value="1">1</option>
      <option value="2">2</option>
@@ -123,11 +123,14 @@
      <option value="8">8</option>
      <option value="9">9</option>
      <option value="10">10</option>
-      </select></td>
+      </select>
+      </td>
     </tr>
+    
     <tr>
-      <td id="Child">Child<br> 3-12</td>
-      <td>$26.95</td>
+      <td id="child">Child<br> 3-12</td>
+      <td id="childPrice">$26.95</td>
+      
       <td>
         <select id="childQuantity">
      <option value="0">0</option>  
@@ -147,8 +150,8 @@
     
     <tr>
       
-      <td id="Senior">Senior<br> 65 & over</td>
-      <td>$31.95</td>
+      <td id="senior">Senior<br> 65 & over</td>
+      <td id="seniorPrice">$31.95</td>
       <td>
         <select id="seniorQuantity">
         <option value="0">0</option>  
@@ -168,7 +171,7 @@
     
     <tr>
       <td id="Child2">Child<br> 2 & under</td>
-      <td>$0</td>
+      <td id="child2Price">$0</td>
       <td>
      <select id="child2Quantity">
      <option value="0">0</option>  
@@ -187,7 +190,7 @@
     </tr>
   </tbody>
 </table>
-<button type="button" class="btn btn-warning">Check Out</button>
+<button type ="button" class="btn btn-warning">Check Out</button>
     </div>
 </div>
 </section>
@@ -210,9 +213,34 @@
 </form>
 
 
-<footer>
+<footer><!--This is the begining of the footer it has the same nav items-->
+           <nav class="navbar navbar-expand-md navbar-light"  style="background-color: #92bba1;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div id="mainNavbar" class="collapse navbar-collapse ">
+    
+   <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="attractions.html">Attractions</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="visitors.html">Visitors Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tickets.html">Tickets</a>
+  </li>
+</ul>
+  </div>
+ </nav>
+ </footer><!--This is the end of the footer-->
 
-</footer>
    
     
     
