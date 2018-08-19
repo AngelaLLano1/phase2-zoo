@@ -1,20 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-.caption {
-   display:flex;
-   font-family: 'Roboto', sans-serif;
 
-  }
-  
-  /*This style is for the attraction page*/
-  
-  #grid{
-     background-color: #92bba1;
-  }
-  
 
-/*The styles below are for the ticket.html page*/
+/*This is the beginning of the style for the ticket.html page*/
 
 .jumbotron{
    background-color: #B09C63; 
@@ -28,8 +17,6 @@
 #tickets{
    background-color: #B09C63;
    font-family: 'Roboto', sans-serif;
-
-   
 }
 
 
@@ -40,20 +27,9 @@
    display:flex;
    }
    
- .animals {
-    transition-property: width, height;
-    transition-duration: 4s;
-
-}
-
-.animals:hover{
-   width:  400px;
-   height: 200px;
-   
-}
-
-
-
+   /*This is the end of the ticket html page./*
+ 
+ 
 /*h1 h4 div>p {
    
 display: flex;
@@ -64,14 +40,12 @@ font-family: 'Roboto', sans-serif;
    
 
 
-#attraction{
-   display: flex;
-   text-align:center;
-   font-family: 'Roboto', sans-serif;
      }
      
 #info{
+   display: flex;
    font-family: 'Roboto', sans-serif;
+   
 }
 
 p~ul  {
@@ -95,5 +69,52 @@ img:hover{
    transition: scale (1.2);
 }
 */
+/*This is the begnning of the style for the attraction page*/
 
+#attraction{
+   position:relative;
+   text-align:center;
+   font-family: 'Roboto', sans-serif;
+   animation:mymove 5s infinite;
+}
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+
+
+ #tigerStyle {
+    display:flex;
+    /*position:fixed;*/
+ } 
+ 
+ .caption {
+   display:flex;
+   font-family: 'Roboto', sans-serif;
+
+  }
+  
+ 
+  #grid{
+     background-color: #92bba1;
+  }
+ 
+
+/*program {
+  position:fixed;
+}*/
+
+ 
+ .animals {
+    transition-property: width, height;
+    transition-duration: 4s;
+
+}
+
+.animals:hover{
+   width:  400px;
+   height: 200px;
    
+}
+
+ /*This is the end of the style for the attraction page*/

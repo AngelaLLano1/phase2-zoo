@@ -4,12 +4,39 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--This script was copied to avoid an undefined error in jquery script-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+   <script>
+function enhance(x) {
+    x.style.height = "370px";
+    x.style.width = "550px";
+}
 
+function normal(x) {
+    x.style.height = "330px";
+    x.style.width = "500px";
+}
+</script>
+
+<!--The following script runs in the header section-->
+   <!-- <script>
+$(document).ready(function(){
+    $("#attraction").mouseover(function(){
+        $("#attraction").animate("background-color", "yellow");
+    });
+    $("#attraction").mouseout(function(){
+        $("attraction").css("background-color", "lightgray");
+    });
+});
+</script>-->
+    
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" href="css/stylesheet.css">
     
     <title>Comming Attractions</title>
+    
   </head>
   
   <section class='Modal'>
@@ -84,13 +111,13 @@
     </div><!--end of row-->
     <div class="row">
     <div class="col-md-6 col-lg-6 col-xl-6">
-    <img class="img-fluid" src="images/tiger-500.jpg">
-    
+     <!-- <id="tigerStyle" for style-->
+    <img onmouseover="enhance(this)" onmouseout="normal(this)" width="500" height="330" id="tigerStyle" class="img-fluid" src="images/tiger-500.jpg">
+       <!-- </div>-->
     <h4 id="info">Check out our Visitor page for maps Zoo hours and directions</h4>
-    
     <button type="button" class="btn btn-dark"><a href="visitors.html">Visitors</a></button>
     </div>
-    <div class="col-md-6 col-lg-6 col-xl-6">
+    <div id="program" class="col-md-6 col-lg-6 col-xl-6">
     <p>The following program will run from June - August.</p>
     <ul> <li>The Exotic Bird Exhibit</li>
     <li>The ButterFly Garden</li>
@@ -164,7 +191,7 @@
          <div class="row">
        <div class="col-md-6 col-lg-6 col-xl-6">
          <div class="animals-2">
-      <img class="img-fluid" src="images/panda-500.jpg">
+      <img onmouseover="enhance(this)" onmouseout="normal(this)" width="500" height="330" class="img-fluid" src="images/panda-500.jpg">
       <h4> Check out Our Forest </h4>
       <p>This event will run from July-August in Section-5</p>
     </div>
@@ -172,7 +199,7 @@
       
        <div class="col-md-6 col-lg-6 col-xl-6">
          <div class="animals-2">
-      <img class="img-fluid" src="images/whale-500.jpg">
+      <img onmouseover="enhance(this)" onmouseout="normal(this)" width="500" height="330" class="img-fluid" src="images/whale-500.jpg">
       <h4> Check out Our Aquarium by the Ocean Bay </h4>
       <p>This event will run from July-August in Section-5</p>
       </div>
@@ -219,12 +246,14 @@
     
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--copied this code from google to avoid $ undefined error-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--end of script tag-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     
    <script type="text/javascript" src="js/myScript.js"></script>
-    
     
     </body>
 </html>
