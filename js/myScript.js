@@ -41,7 +41,16 @@
     });
     */
 
-      
+ 
+
+
+/*window.onload= function() {
+    getElementByClassName()
+};
+*/
+
+
+   
     
     
     

@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
+/*This style pertains to the modal*/
 
+.modal-header{
+    background-color: #92bba1;
+}
+.modal-body{
+    background-color: #B09C63;
+}
+.modal-footer{
+    background-color: #92bba1;
+}
+/*This is the end of the modal style*/
 
 
 /*This is the beginning of the style for the ticket.html page*/
@@ -18,31 +30,93 @@
    background-color: #B09C63;
    font-family: 'Roboto', sans-serif;
 }
-
-
-.container-fluid{
-   background-color: ;
-}
-.container{
-   display:flex;
-   }
-   
    /*This is the end of the ticket html page./*
- 
- 
-/*h1 h4 div>p {
    
-display: flex;
-text-align: center;
-font-family: 'Roboto', sans-serif;
+ /*This is the begnning of the style for the checkOut page*/  
+ #check {
+     background-color: #B09C63;
+   font-family: 'Roboto', sans-serif;
+     
+ }
+ 
+ 
+ 
+ 
+ /*This is the end of the style for the checkOut page*/
+ 
+ 
+
+
+/*This is the begnning of the style for the attraction page*/
+
+.attractionPage {
+    font-family: 'Anton',sans-serif;
+    font-size: 50px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 4;
+    animation-direction:alternate;
+    }
+    @keyframes slide {
+    
+    from {transform:translateX(0);}
+    to {transform:translateX(900px);}
+}
+
+
+    
+   /* {position:relative;
+    font-family: 'Anton',sans-serif;
+    font-size: 40px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 2;
+    animation-direction:alternate;
+}
+@keyframes slide {
+    
+    from {transform:translateX(0);}
+    to {transform:translateX(900px);}
+}
 */
 
-   
 
 
-     }
-     
-#info{
+
+/*#attraction{
+    
+    position:relative;
+    font-family:  'Anton', sans-serif;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 2;
+    animation-direction:alternate;
+    
+   /*position:relative;
+   text-align:center;
+   font-family:  'Anton', sans-serif;
+   animation:mymove 5s infinite;*/
+}
+
+
+
+ #tigerStyle {
+    display:flex;
+    /*position:fixed;*/
+     transition: width 2s, height 2s, transform 2s;
+ } 
+ 
+ 
+ #tigerStyle:hover{
+      width: 600px;
+    height: 400px;
+    transform: rotate(360deg);
+ }
+ 
+ #info{
    display: flex;
    font-family: 'Roboto', sans-serif;
    
@@ -59,34 +133,10 @@ div p{
    font-family: 'Roboto', sans-serif;
 }
 
-/*img{
-   max-width: 100%
-   max-height:100%;
-   transition:0.75s;
-}
-
-img:hover{
-   transition: scale (1.2);
-}
-*/
-/*This is the begnning of the style for the attraction page*/
-
-#attraction{
-   position:relative;
-   text-align:center;
-   font-family: 'Roboto', sans-serif;
-   animation:mymove 5s infinite;
-}
-@keyframes mymove {
-    from {top: 0px;}
-    to {top: 10px;}
-}
-
-
- #tigerStyle {
-    display:flex;
-    /*position:fixed;*/
- } 
+ 
+ 
+ 
+ 
  
  .caption {
    display:flex;

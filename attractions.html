@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--This script was copied to avoid an undefined error in jquery script-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!--This is a test to run my script-->
+   <!--
+   <script> 
+$(document).ready(function(){
+    $("window").onload(function(){
+        $("attractionPage").load("attractionPage");
+    });
+});
+</script>-->
+
+   
    
    <script>
 function enhance(x) {
@@ -59,7 +71,7 @@ $(document).ready(function(){
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">GET CODE</button>
+        <button type="button" class="btn btn-dark"><a href="checkOut.html">GET CODE</a></button>
       </div>
     </div>
   </div>
@@ -95,6 +107,9 @@ $(document).ready(function(){
   <li class="nav-item">
     <a class="nav-link" href="tickets.html">Tickets</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="checkOut.html">Check-Out</a>
+  </li>
 </ul>
 </div><!--end of id="mainNavbar"-->
  </nav>
@@ -103,17 +118,24 @@ $(document).ready(function(){
 
   <!--beginning of jumbotron-->  
 <div class="jumbotron jumbotron-fluid">
+  <div class="attractionPage">
+    COMMING ATTRACTIONS
+    </div>
+  <!--<h1 id="attraction">COMMING ATTRACTIONS</h1>-->
   <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-lg-4">
-    <h1 id="attraction">Comming Attractions</h1>
+  <!--<div class="row">
+    <div class="col-md-6 col-lg-4">-->
+    <!--<h1 id="attraction">COMMING ATTRACTIONS</h1>-->
     </div><!--end of col-->
-    </div><!--end of row-->
+    <!--end of row-->
+    <!--start new row-->
     <div class="row">
     <div class="col-md-6 col-lg-6 col-xl-6">
      <!-- <id="tigerStyle" for style-->
-    <img onmouseover="enhance(this)" onmouseout="normal(this)" width="500" height="330" id="tigerStyle" class="img-fluid" src="images/tiger-500.jpg">
+    <!--<img onmouseover="enhance(this)" onmouseout="normal(this)" width="500" height="330" id="tigerStyle" class="img-fluid" src="images/tiger-500.jpg">
        <!-- </div>-->
+       
+       <img id="tigerStyle" class="img-fluid" src="images/tiger-500.jpg">
     <h4 id="info">Check out our Visitor page for maps Zoo hours and directions</h4>
     <button type="button" class="btn btn-dark"><a href="visitors.html">Visitors</a></button>
     </div>
