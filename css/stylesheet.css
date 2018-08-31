@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-/*This style pertains to the modal*/
+/*---------This style pertains to the modal---------------*/
 
 .modal-header{
     background-color: #92bba1;
@@ -12,10 +12,10 @@
 .modal-footer{
     background-color: #92bba1;
 }
-/*This is the end of the modal style*/
+/*------------This is the end of the modal style----------*/
 
 
-/*This is the beginning of the style for the ticket.html page*/
+/*-------------This is the beginning of the style for the ticket.html page--------*/
 
 .jumbotron{
    background-color: #B09C63; 
@@ -25,28 +25,24 @@
    background-color: #92bba1;
 }
 
-/*This id is for the calculation table*/
+/*------This id is for the calculation grid-----------*/
 #ticket{
     background-color: #92bba1;
-    
 }
-   
-
+ 
 #tickets{
    background-color: #B09C63;
    font-family: 'Roboto', sans-serif;
 }
-   /*This is the end of the ticket html page./*
+
+   /*------This is the end of the ticket html page.------/*
    
- /*This is the begnning of the style for the checkOut page*/  
+ /*---------This is the begnning of the style for the checkOut page-------*/  
  #check {
      background-color: #B09C63;
    font-family: 'Roboto', sans-serif;
      
  }
- 
- 
- 
  
  /*This is the end of the style for the checkOut page*/
  
@@ -69,8 +65,6 @@
     from {transform:translateX(0);}
     to {transform:translateX(815px);}
 }
-
-
 
 
  #tigerStyle {
@@ -103,10 +97,10 @@ div p{
    font-family: 'Roboto', sans-serif;
 }
 
- 
- 
- 
- 
+.fa-earlybirds{
+    font-size: 30px;
+}
+
  
  .caption {
    display:flex;
@@ -120,16 +114,39 @@ div p{
   }
  
 
-/*program {
-  position:fixed;
-}*/
-
- 
  .animals {
     transition-property: width, height;
     transition-duration: 4s;
+}
+
+ /*This is the end of the style for the attraction page*/
+ 
+ 
+ /*------The begining of the check out page--------*/
+ 
+#inputEmail4{
+    width:530px;
+}
+
+#inputPassword4{
+    width:300px;
 
 }
 
+#inputAddress{
+    width:530px;
+}
 
- /*This is the end of the style for the attraction page*/
+#inputAddress2{
+    width:530px;
+}
+#inputCity{
+    width: 200px;
+}
+#inputState{
+    width: 200px;
+    margin-right:60px;
+}
+#inputZip{
+    width: 100px;
+}
