@@ -24,8 +24,14 @@
 .table{
    background-color: #92bba1;
 }
-   
+
+/*This id is for the calculation table*/
+#ticket{
+    background-color: #92bba1;
+    
 }
+   
+
 #tickets{
    background-color: #B09C63;
    font-family: 'Roboto', sans-serif;
@@ -65,40 +71,12 @@
 }
 
 
-    
-   /* {position:relative;
-    font-family: 'Anton',sans-serif;
-    font-size: 40px;
-    animation-name: slide;
+.attractionPage{animation-name:slide;
     animation-duration: 2s;
     animation-timing-function:ease-in;
     animation-iteration-count: 2;
     animation-direction:alternate;
-}
-@keyframes slide {
-    
-    from {transform:translateX(0);}
-    to {transform:translateX(900px);}
-}
-*/
-
-
-
-
-/*#attraction{
-    
-    position:relative;
-    font-family:  'Anton', sans-serif;
-    animation-name: slide;
-    animation-duration: 2s;
-    animation-timing-function:ease-in;
-    animation-iteration-count: 2;
-    animation-direction:alternate;
-    
-   /*position:relative;
-   text-align:center;
-   font-family:  'Anton', sans-serif;
-   animation:mymove 5s infinite;*/
+   
 }
 
 
@@ -161,11 +139,5 @@ div p{
 
 }
 
-/*.animals:hover{
-   width:  400px;
-   height: 200px;
-   
-}
-*/
 
  /*This is the end of the style for the attraction page*/

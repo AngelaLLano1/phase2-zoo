@@ -1,59 +1,33 @@
- /* 
-      //This is an array to hold different ticket prices
+   
+ (function(){   
+document.getElementById('check').addEventListener('submit',estimateTotal)   
+function estimateTotal(event){
+    event.preventDefault();
+    /*console.log('You submitted the form.')*/
+    
+    var ticketType=document.getElementById('adult');
+    
+    if (ticketType.value===''){
+        alert('Please select tickets.');
+        ticketType.focus();
+    }
+  var ticketAdult=document.getElementById ('adult').value;
+      ticketChild=document. getElementById ('child').value;
+      ticketSenior=document. getElementById ('senior').value;
+      ticketChild2=document. getElementById ('child2').value;  
       
-      ticketType= new int [4]{36.95,26.95,31.95,0};
-      quantity= new int [11]{0,1,2,3,4,5,6,7,8,9,10};
-
-      */ 
+      console.log(ticketAdult,ticketChild,ticketSenior,ticketChild2);
       
-     /* $(document).ready(function() { $('div').click(function)(){
-       $('div').effect('slide', {direction:'right'},1000);
-       document.getElementById(tigerStyle).innerHTML
-      });
-      
-      $(document).ready(function() { $('#tigerStyle').click(function(){
-       $(this).effect('slide', {direction:'right'},1000);});});
-       */
+      var totalQty = ticketAdult + ticketChild +ticketSenior+ ticketChild2,
+      estimate;
        
+       estimate=(36.95*ticketAdult)+ (26.95*ticketChild)+(31.95*ticketSenior)+(0.00*ticketChild2);
+      document.getElementById('t-estimate').value=estimate;
+      
+}
 
-    
-      // $(document).ready(function(){
-      // $("#tigerStyle").click(function(){
-        //$("#tigerStyle").slideDown("slow");
-   // });
-//});
-
-  /*$(document).ready(function(){
-    $("tigerStyle").mouseover(function(){
-        $("tigerStyle").css("background-color", "yellow");
-    });
-    $("tigerStyle").mouseout(function(){
-        $("tigerStyle").css("background-color", "lightgray");
-    });
-});
- */
+ })();
  
-/* $(document).ready(function(){
-    $("#attraction").onloadstart(function(){
-        $("#attraction").slideDown(1000, function(){
-        
-        });
-    });
-    */
-
- 
-
-
-/*window.onload= function() {
-    getElementByClassName()
-};
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-
-   $(document).ready(function(){
-       $('.attractionPage').slideDown('slow')
-   });
-  </script>  
     
-    */
+    
+    

@@ -92,112 +92,81 @@
   
  </section>
 
-      
-     
-
-<section id="tickets">
+  <!--shopping cart calculation-->    
+    <section>
+    <form id="ticket">
   <div class="container-fluid">
   <div class="row">
-    <div class="col">
-      <table class= "table table-hover">
-  
-  <thead>
-    <tr>
-      <th scope="col">Tickets</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quantity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td id="adult">Adult<br> 13 & over</td>
-      <td id="adultPrice">$36.95</td>
-      
-      <td><!--used emmet code for select list [option value="0$"]*10 -->
-    <select id="adultQuantity">
-     <option value="0">0</option>  
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-     <option value="6">6</option>
-     <option value="7">7</option>
-     <option value="8">8</option>
-     <option value="9">9</option>
-     <option value="10">10</option>
-      </select>
-      </td>
-    </tr>
     
-    <tr>
-      <td id="child">Child<br> 3-12</td>
-      <td id="childPrice">$26.95</td>
-      
-      <td>
-        <select id="childQuantity">
-     <option value="0">0</option>  
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-     <option value="6">6</option>
-     <option value="7">7</option>
-     <option value="8">8</option>
-     <option value="9">9</option>
-     <option value="10">10</option>
-      </select>
-      </td>
-    </tr>
+      <div class="col">
+          <label for="ticket">Adult<br> 13 & Over</label>
+          </div>
+          <div class="col">
+          <label for="ticket" class="style-a">$36.95</label>
+          </div>
+          <div class="col">
+     <input type="number" min="0" id="adult" placeholder="0" >
+     </div>
+     </div><!--end of row-->
+     <!--start new row and 3 columns per row-->
+     <br><br>
+     
+     <div class="row">
+     <div class="col">
+          <label for="ticket">Child<br>3-12</label>
+          </div>
+          <div class="col">
+          <label for="ticket" class="style-c">$26.95</label>
+          </div>
+          <div class="col">
+     <input type="number" min="0" id="child" placeholder="0">
+     </div>
+     </div><!--end of row-->
+     
+     <br><br>
+     
+     <!--start new row and 3 columns per row-->
+     <div class="row">
+     <div class="col">
+          <label for="ticket">Senior<br>65 & over</label>
+          </div>
+          <div class="col">
+          <label for="ticket" class="style">$31.95</label>
+          </div>
+          <div class="col">
+     <input type="number" min="0" id="senior" placeholder="0">
+     </div>
+     </div>
+     <br>
+     <br>
+     
+     <div class="row">
+     <div class="col">
+          <label for="ticket">Child<br>2 & under</label>
+          </div>
+          <div class="col">
+          <label for="ticket" class="style">$0.00</label>
+          </div>
+          <div class="col">
+     <input type="number" min="0" id="child2" placeholder="0">
+     </div>
+     </div>
+     
+     
+     </div>
+     
     
-    <tr>
-      
-      <td id="senior">Senior<br> 65 & over</td>
-      <td id="seniorPrice">$31.95</td>
-      <td>
-        <select id="seniorQuantity">
-        <option value="0">0</option>  
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-     <option value="6">6</option>
-     <option value="7">7</option>
-     <option value="8">8</option>
-     <option value="9">9</option>
-     <option value="10">10</option>
-      </select>
-      </td>
-    </tr>
-    
-    <tr>
-      <td id="Child2">Child<br> 2 & under</td>
-      <td id="child2Price">$0</td>
-      <td>
-     <select id="child2Quantity">
-     <option value="0">0</option>  
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-     <option value="6">6</option>
-     <option value="7">7</option>
-     <option value="8">8</option>
-     <option value="9">9</option>
-     <option value="10">10</option>
-      </select>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<button type ="button" class="btn btn-warning"><a href="checkOut.html">Check Out</a></button>
-    </div>
-</div>
-</section>
+</form>
 
+<form id="check">
+    <br>
+<div>
+<button>Check Out</button>
+<input type="number" min="0" id="t-estimate" placeholder="0.00">
+</div>
+</form>
+ 
+     
 
 <footer><!--This is the begining of the footer it has the same nav items-->
            <nav class="navbar navbar-expand-md navbar-light"  style="background-color: #92bba1;">
@@ -236,9 +205,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     
-   <script type="text/javascript" src="js/myScript.js"></script>
-    
-    
   </body>
+  <script src="js/myScript.js"></script>
   
 </html>
