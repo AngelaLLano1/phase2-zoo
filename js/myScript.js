@@ -22,7 +22,7 @@ function estimateTotal(event){
       estimate;
        
        estimate=(36.95*ticketAdult)+ (26.95*ticketChild)+(31.95*ticketSenior)+(0.00*ticketChild2);
-      document.getElementById('t-estimate').value=estimate;
+      document.getElementById('totalEstimate').value=estimate.toFixed(2);
       
 }
 
